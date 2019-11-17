@@ -1,0 +1,85 @@
+Public interface algorithm {
+	void draw ();
+}
+Public class bubble implement algorithm {
+@Override
+   public void draw() {
+      System.out.println("bubble::draw()");
+   }
+}
+public class quick implements algorithm {
+
+   @Override
+   public void draw() {
+      System.out.println("quick::draw()");
+   }
+}
+public class Insertion implements algorithm {
+
+   @Override
+   public void draw() {
+      System.out.println("Insertion::draw()");
+   }
+}
+public class selection implements algorithm {
+
+   @Override
+   public void draw() {
+      System.out.println("Circle::draw()");
+   }
+}
+public class counting implements algorithm {
+
+   @Override
+   public void draw() {
+      System.out.println("counting::draw()");
+   }
+}
+
+public class AlgorithmMaker {
+   private algorithm bubble;
+   private algorithm quick;
+   private algorithm selection;
+   private algorithm insertion;
+   private algorithm counting;
+
+   public AlgorithmMaker() {
+      bubble = new bubble();
+      quick = new quick();
+      selection = new selection();
+      insertion = new insertion();
+      couting = new counting();
+      
+   }
+
+   public void drawbubble(){
+      bubble.draw();
+   }
+   public void drawquick(){
+      quick.draw();
+   }
+   public void drawselection(){
+      selection.draw();
+   }
+   public void drawinsertion(){
+      insertion.draw();
+   }
+   public void drawcounting(){
+      counting.draw();
+}
+public class FacadePatternDemo {
+   public static void main(String[] args) {
+      algorithmMaker algorithmMaker = new algorithmMaker();
+
+      shapeMaker.drawbubble();
+      shapeMaker.drawquick();
+      shapeMaker.drawselection();
+      shapeMaker.drawinsertion();
+      shapeMaker.drawcounting();
+   }
+}
+bubble::draw()
+quick::draw()
+selection::draw()
+insertion::draw()
+counting::draw()

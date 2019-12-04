@@ -83,3 +83,10 @@ quick::draw()
 selection::draw()
 insertion::draw()
 counting::draw()
+
+
+function Singleton (array[]) {
+	if (array[]=null){
+		var newArray[] = null;
+	}
+}

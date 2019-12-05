@@ -1,3 +1,5 @@
+
+//Facade Design Pattern
 Public interface algorithm {
 	void draw ();
 }
@@ -84,9 +86,22 @@ selection::draw()
 insertion::draw()
 counting::draw()
 
-
+//Singleton Design Pattern
 function Singleton (array[]) {
 	if (array[]=null){
 		var newArray[] = null;
 	}
+}
+
+//Strategy Desgin Pattern
+function insertionSort() {
+		….
+}
+
+function mergeSort() {
+		...
+}
+
+function bubbleSort() {
+		...
 }
